@@ -169,7 +169,7 @@ searchApp.controller('SearchResultsList', ['$scope', 'searchService', 'filterSer
 
 searchApp.service('searchService', ['$q', 'esFactory', 'filterService', function($q, esFactory, filterService) {
   var esClient = esFactory({
-    location: 'localhost:9200'
+    location: 'www.zzbig.com:9200'
   });
 
   this.setQuery = function(searchTerms, selectedFilters) {
