@@ -18,6 +18,7 @@
 </head>
 
 <body ng-app="searchApp" ng-controller="SearchResultsList">
+  <p>Hello</p>
   <div class="search-form">
     <form ng-submit="search()">
       <input type="text" ng-model="searchTerms" placeholder="Search for books" class="search-input" ng-keyup="evaluateTerms($event)" ng-blur="showAutocomplete = false">
