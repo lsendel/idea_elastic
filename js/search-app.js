@@ -82,7 +82,7 @@ searchApp.controller('SearchResultsList', ['$scope', 'searchService', 'filterSer
         thisFilter = {field: field, value: value};
 
     filterIndex > -1 ? selectedFilters.splice(filterIndex, 1) : selectedFilters.push(thisFilter);
-
+    console.log(filterService.filters.selectedFilters);
     resetResults();
     getResults();
   };
