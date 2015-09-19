@@ -1,4 +1,7 @@
-var searchApp = angular.module('searchApp', ['elasticsearch', 'ngSanitize']);
+var searchApp = angular.module('searchApp', ['elasticsearch', 'ngSanitize'],
+    ['$locationProvider', function($locationProvider){
+        $locationProvider.html5Mode(true);
+    }]);
 
 searchApp.controller('SearchResultsList', ['$scope', 'searchService', 'filterService', '$sce', function($scope, searchService, filterService, $sce) {
 
